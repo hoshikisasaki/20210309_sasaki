@@ -1,0 +1,35 @@
+.fotter{
+margin-bottom: 5px;
+  &-inner{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+  }
+  &-logo{
+    color: white;
+    @include fz(18);
+  }
+  &-list{
+    display: flex;
+   
+  }
+ 
+    &-item {
+      @include fz(14);
+      margin-right: 40px;
+      &:last-child{
+        margin-right: 0px;
+      }
+      a{
+        color: white;
+      }
+  }
+&-copyright{
+  text-align: center;
+  color: white;
+  background-color: black;
+  @include fz(14);
+}  
+}
+

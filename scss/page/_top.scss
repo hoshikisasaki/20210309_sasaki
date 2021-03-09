@@ -1,0 +1,262 @@
+.top{
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  top: 0;
+
+  
+&-imagearea{
+  width: 100%;
+  height: 100%;
+  background: url(../img/eyecatch.jpg) no-repeat center / cover;
+}
+&-title{
+  font-style: italic;
+  @include fz(54);
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+&-newsarea{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 70px;
+  .newsarea-left{
+    width: 80%;
+    background-color: white;
+    @include fz(16);
+    &-date{
+      padding-top: 3px;
+     padding-left: 6px;
+    }
+    &-text{
+      padding-left: 15px;
+   
+    }
+  }
+  .newsarea-right{
+    width: 20%;
+    background-color: black;
+    text-align: center;
+    
+   a{
+     padding: 10px;
+     line-height: 70px;
+     color: white;
+     @include fz(14);
+    
+     
+   }
+  }
+
+}
+
+}
+
+
+.about{
+margin-bottom: 192px;
+width: 100%;
+height: 608px;
+background-color: black;
+position: relative;
+&-textarea{
+  color:white;
+  max-width: 960px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0,-50%);
+  z-index: 1;
+}
+&-tlt{
+  @include fz(30);
+}
+&-text{
+  @include fz(16);
+  margin-top: 50px;
+}
+&-btn{
+  @include _btn('white')
+}
+&-imagearea {
+  position: absolute;
+  left: 55%;
+  top: 27%;
+  max-width: 768px;
+  img{
+    width: 100%;
+  }
+}
+}
+
+.service{
+  width: 100%;
+  background-color: lightgray;
+  padding-bottom: 240px;
+
+  &-contents{
+    margin-top: 30px;
+    height: 640px;
+    margin-bottom: 290px;
+    position: relative;
+  }
+  ._under{
+    margin-top: 0;
+    height: 540px;
+    margin-bottom: 0;
+  }
+
+  &-textarea{
+    max-width: 768px;
+    background-color: white;
+    padding: 100px;
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    &-ttl{
+      @include fz(14);
+    }
+    &-text{
+      @include fz(14);
+      padding-top: 20px;
+    }
+    &-top{
+      left: 22%;
+    }
+    &-under{
+      right: 22%;
+    }
+  }
+  
+&-ttl{
+  padding-top: 30px;
+  @include fz(24);
+  text-align: center;
+  
+}
+&-btn{
+  @include _btn;
+  display: block;
+  margin-left: auto;
+ margin-top: 20px;
+}
+
+&-imagearea{
+ 
+  height: 100%;
+  width: 50%;
+  position: absolute;
+ &-top{
+  top: 0;
+  left: 50%;
+  background: url(../img/service2.jpg) no-repeat center / contain;
+ }
+ &-under{
+  background: url(../img/service1.jpg) no-repeat center / contain;
+
+ }
+}
+
+
+}
+
+.event{
+  margin: 192px 0;
+  width: 100%;
+
+}
+
+.primary{
+display: flex;
+justify-content: space-between;
+&-company{
+  background: url(../img/company.jpeg) no-repeat center / cover;
+  width: 48%;
+
+}
+&-btn{
+  text-align: center;
+ display: block;
+  padding: 120px;
+  color: white;
+  font-weight: bold;
+  @include fz(30);
+  
+}
+span{
+  display: block;
+  @include fz(18);
+  margin-top: 10px;
+}
+
+&-recruit{
+  background: url(../img/recruit.jpg) no-repeat center / cover;
+  width: 48%;
+}
+}
+.secondary{
+  margin-top: 192px;
+  &-faq{
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+   padding: 65px 50px;
+   display: flex;
+   text-align: center;
+  }
+  &-ttl{
+    display: block;
+    @include fz(34);
+    color: white;
+  }
+  &-text{
+    color: white;
+   line-height: 34px;
+   @include fz(18);
+   margin-left: 41%;
+  }
+}
+
+.contact{
+  width: 100%;
+  background: url(../img/contact-bg.jpg) no-repeat center / cover;
+ &-inner{
+   max-width: 1200px;
+   padding:  195px 0;
+   margin: 0 auto;
+   text-align: center;
+   
+  }
+     &-ttlbox{
+       color: white;
+       span{
+         @include fz(18);
+       }
+     }
+     &-ttl{
+       @include fz(30);
+       margin-bottom: 20px;
+     }
+    
+     &-textbox{
+       color: white;
+       margin-top: 40px;
+     }
+     &-text{
+       @include fz(34);
+       &-ts{
+         @include fz(14);
+         margin-top: 30px;
+       }
+     }
+    
+}
+.contact-btn{
+  @include _btn('another');
+  margin-top: 40px;
+}

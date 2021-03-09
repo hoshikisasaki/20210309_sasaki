@@ -1,0 +1,30 @@
+$initType: 'normal';
+@mixin _btn($type:$initType){
+  @include fz(14);
+ width: 170px;
+ height: 40px;
+ background-color: transparent;
+ color: black;
+ display: inline-block;
+ text-align: center;
+ line-height: 40px;
+ border: 1px solid black;
+ 
+ 
+ &:hover{
+  background: #1B1B1B;
+  color: #fff;
+  cursor: pointer;
+ }
+ 
+  //サイト共通ボタンのスタイル　1
+  @if( $type == 'white' ){
+    background-color: white;
+    color: black;
+}
+@if( $type == 'another'){
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+}
